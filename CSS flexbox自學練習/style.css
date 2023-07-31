@@ -1,0 +1,26 @@
+@charset "UTF-8"; 
+nav{
+    display: flex;
+}
+nav>.logo{
+    flex: none;width: 100px;   /*沒有彈性 固定尺寸*/
+    background-color: #ccffff;
+}
+nav>.menu{
+    flex: auto;  /*盡量把容器的空間漲滿*/
+    background-color: #ffcccc;
+}
+nav>.user{background-color: #ccffcc;}
+/* main樣式設定 */
+/*main 容器*/
+main{     
+    display: flex;      /*並排 切欄*/
+    justify-content: center;   /*水平對齊 欄位置中center  flex-start靠左  flex-end靠右 */
+    align-items: center;    /*stretch預設值 center置中 flex-start靠上 flex-end靠下*/
+    background-color: #ccc;       
+}
+/* item 項目 */
+main>.item{
+    flex: none;width: 300px;margin: 10px;
+    background-color: #ffcccc;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS function</title>
+</head>
+<body>
+    <script>
+        /*函式
+        function test(參數){
+
+        } 
+        test(傳入函式的參數的資料);
+        */
+       /*內建函式 alert()
+       設計階段function test(){ }
+       呼叫或使用 test("987");
+       */
+
+        /*
+        function test(msg){
+            alert(msg);
+        }
+        test("987");
+        */
+        /*
+        function add(n1,n2){
+            alert(n1+n2);
+        }
+        add(6,8);  //14
+        add("hi","bye");  //hibye
+        */
+
+        //return; 回傳    
+       
+       function add(n1,n2){
+            alert(n1+n2);
+            return n1+n2;
+        }
+        
+        let result=add(4,5)*add(7,3);  
+       alert(result);                   //90
+       </script>
+</body>
+</html>

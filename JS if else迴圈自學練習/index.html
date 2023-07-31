@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS if</title>
+</head>
+<body>
+    <!-- <script></script> -->
+    <!-- let  -->
+    <!-- if(判斷式){
+        alert()
+        console.log()
+    }else if(){
+
+    }else{
+        
+    }-->
+
+    <script>
+    <!-- 輸入提領金額 是否可以領 顯示可以領或不行 -->
+    // 0-99不能領 <0不能領 >20000不能領
+    var money=prompt("請輸入提領金額 輸入百位數以上","");
+    if(money<99){
+        alert("0-99不能領");
+     }
+     if(money>20000){
+        alert(">20000不能領");
+    }else {
+        alert("領取成功"+money+"元");
+    }
+    
+   
+    </script>
+</body>
+</html>

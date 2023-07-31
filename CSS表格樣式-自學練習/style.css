@@ -1,0 +1,32 @@
+@charset "UTF-8"; 
+/* border: 1px solid #888888 ; 一開始用完可以刪除 */
+table{
+    width: 400px;
+    border-collapse: collapse;
+}
+/* border-bottom 可設定底下的線 其他都不要 */
+td{
+    border-bottom: 1px solid #888888 ;
+    padding: 10px;
+}
+/* 表格中第一列 */
+tr:nth-child(1){
+    background-color: #C43238;
+    color:#F4ECD6 ;
+    font-weight: bold;
+}
+tr:nth-child(2){
+    background-color:#F4ECD6 ;
+    color: #C43238;
+    font-weight: bold;
+}
+tr:nth-child(3){
+    background-color:#C43238 ;
+    color: #F4ECD6;
+    font-weight: bold;
+}
+
+/* even 偶數列 可以偶數列一次使用相同樣式 */
+/* tr:nth-child(even){
+    background-color:#C43238 ;
+} */

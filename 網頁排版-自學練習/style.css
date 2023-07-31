@@ -1,0 +1,22 @@
+@charset "UTF-8"; 
+.head{
+    background-color: #C43238 ;color:#F4ECD6 ; font-size: 30px;font-weight: bold;
+    text-align:center;padding: 10px;
+}
+.content{
+    width: 1000px;margin-left: auto;margin-right: auto;
+}
+.box{
+    width: 280px;padding: 10px;margin: 10px;background-color: #C43238;
+    /* float: left; */
+    /* 橫向排列 */
+    display: inline-block;vertical-align: top;
+    text-align:center;height: 150px; line-height: 30px;
+}
+.title{
+    font-weight: bold;color: #F4ECD6;
+}
+@media screen and (max-width:500px) {
+    .head{font-size: 24px;}
+    .content{width: 100%;text-align: center;}
+    }

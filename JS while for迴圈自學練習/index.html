@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS while for迴圈</title>
+</head>
+<body>
+    <script>
+        /*while(判斷){
+            判斷結果true 執行{}內的code
+            直到判斷為false 才跳離整個迴圈
+        } */
+        //題目1+100的總和
+        /*let sum=0;
+        let i=1;
+        while(i<=100){
+            sum+=i;  //sum=sum+i
+            i++;   //i=i+1    i+=1
+        }
+        alert(sum)  //5050
+        */
+
+        /*for(初始區塊;判斷;迴圈區塊){
+            判斷概念同while迴圈
+            注意初始區塊和迴圈區塊的使用時機
+        } */
+        /*let sum=0;
+        for(let i=1;i<=100;i++){       //i=i+1    i+=1
+            sum+=i;  //sum=sum+i 
+        }
+        alert(sum)  //5050
+        */
+
+        /*
+            break;       強制跳離迴圈
+            continue;    強制繼續迴圈
+        */
+        
+        /*let n=0;
+        for(let x=0;x<=100;x++){       
+            if(x==50){
+                break;
+            } 
+            x++;
+        }
+        alert(x);   //50
+        */
+
+        // 整除的話跳過
+        /*    
+        let n=0;
+        for(let x=0;x<=100;x++){       
+            if(x%4==0){
+                continue;
+            } 
+            n++;
+        }
+        alert(n);   //75
+        */
+
+        //分數及格與否 >=60 <60
+        //考慮分數範圍為0-100區間
+        /*let a=prompt("輸入分數","");
+            if(a<0 || a>100){
+                alert("不正確的數字");
+            }else if(a>=60){
+                alert("及格");
+            }else {
+                alert("不及格");
+            }
+        */
+        
+        //三次元 condition ? 符合條件 :不符合條件
+        let a=prompt("輸入分數","");
+            alert(a>=60 ? "及格" :"不及格");
+
+
+
+        //BMI=公斤/(公尺)平方   18.5過輕 24正常  27過重
+        //19.5=52/1.64平方
+        /*
+        let b=prompt("輸入身高(公尺)",""); 
+        let c=prompt("輸入體重(公斤)","");
+        let BMI=c/(b**2);
+           console.log("BMI=",BMI.tofixed(2))
+            if(d<18.5){
+                alert("過輕");
+            }else if(d>=18.5 || d<=24){
+                alert("正常");
+            }else{
+                alert("過重");
+            }
+        */
+        
+        
+
+
+    </script>
+</body>
+</html>

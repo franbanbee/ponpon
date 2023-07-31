@@ -1,0 +1,41 @@
+@charset "UTF-8"; 
+@charset "UTF-8"; 
+nav{
+    display: flex;
+}
+nav>.logo{
+    flex: none;width: 100px;   /*沒有彈性 固定尺寸*/
+    background-color: #ccffff;
+}
+nav>.menu{
+    flex: auto;  /*盡量把容器的空間漲滿*/
+    background-color: #ffcccc;
+}
+nav>.user{background-color: #ccffcc;}
+/* main樣式設定 */
+/*main 容器*/
+/*1200以上的規劃*/
+/*搭配flex-wrap: wrap; 變換成對應欄數 */
+main{     
+    display: flex;flex-wrap: wrap;      /*並排 切欄*/
+    background-color: #ccc;
+    justify-content: center;   /*水平對齊 欄位置中center  flex-start靠左  flex-end靠右 */
+}
+/* item 項目 */
+main>.item{
+    flex: none;
+    width: 270px;margin: 10px;
+    background-color: #ffcccc;
+}
+/*500-1200px 2欄  RWD*/
+@media (max-width:1200px){
+    main>.item{
+        width: 45%;
+    }    
+}
+/*500-1200px 1欄  RWD */
+@media (max-width:500px){
+    main>.item{
+        width: 90%;
+    }    
+}
